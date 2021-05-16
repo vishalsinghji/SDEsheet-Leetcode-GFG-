@@ -1,0 +1,15 @@
+// Kadane’s Algorithm(find the sum of contiguous subarray with maximum sum)
+
+class Solution{
+	//Function to find the sum of contiguous subarray with maximum sum.
+	int maxSubarraySum(int arr[], int n){
+    	int res=arr[0];
+    	int maxending=arr[0];
+    	for(int i=1;i<arr.length;i++)
+    	{
+        	maxending=Math.max(arr[i]+maxending,arr[i]);
+        	res=Math.max(res,maxending);
+    	}
+    	return res;
+	}
+}
