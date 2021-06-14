@@ -18,7 +18,7 @@ class Solution {
                      	l++; m++; break;
             	case 1: m++; break;
            	 
-            	case 2:   temp=nums[m];
+            	case 2:int temp=nums[m];
                      	nums[m]=nums[high];
                      	nums[high]=temp;
                      	high--;
